@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Complaint Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <div class="form-header">Employee Complaint Form</div>
+        
+        <form id="complaintForm">
+            <label>Employee Name</label>
+            <div class="flex-row">
+                <div class="input-container">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder=" ">
+                    <span class="sub-label">First Name</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder=" ">
+                    <span class="sub-label">Last Name</span>
+                </div>
+            </div>
+
+            <label>Employee Id Number</label>
+            <div class="input-container">
+                <i class="fa-regular fa-id-card"></i>
+                <input type="text">
+            </div>
+
+            <label>Department</label>
+            <div class="input-container">
+                <i class="fa-regular fa-building"></i>
+                <input type="text">
+            </div>
+
+            <label>Position</label>
+            <div class="input-container">
+                <i class="fa-regular fa-address-card"></i>
+                <input type="text">
+            </div>
+
+            <label>Date of Incident</label>
+            <div class="input-container half-width">
+                <i class="fa-regular fa-calendar-days"></i>
+                <input type="text" placeholder="dd-MMM-yyyy">
+            </div>
+            <span class="format-hint">dd-MMM-yyyy</span>
+
+            <label>Nature of Complaint</label>
+            <div class="radio-list">
+                <div class="radio-item"><input type="radio" name="nature"> Discrimination</div>
+                <div class="radio-item"><input type="radio" name="nature"> Conflict with Co-worker</div>
+                <div class="radio-item"><input type="radio" name="nature"> Workplace Safety Concern</div>
+                <div class="radio-item"><input type="radio" name="nature"> Harassment</div>
+                <div class="radio-item"><input type="radio" name="nature"> Other</div>
+            </div>
+
+            <label>Description of Incident</label>
+            <textarea rows="4"></textarea>
+
+            <div class="agreement">
+                <input type="checkbox" id="check">
+                <label for="check">I acknowledge that the information provided in this complaint form is true and accurate to the best of my knowledge.</label>
+            </div>
+
+            <div class="center">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
